@@ -1,0 +1,169 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: rgb(208, 213, 218);
+}
+
+.navbar {
+    background-color:#E53935 !important;
+}
+
+.nav-link {
+    color:white;
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    background-color: rgb(226, 226, 8);
+    border-radius: 5px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cart1,.cart2,.cart3 {
+    display: flex;
+    padding: 8px;
+    text-decoration: none;
+    margin: 25px;
+    margin-top: 60px !important;
+    width: 260px;
+    color:  #E53935;
+    font-size: 27px;
+   justify-content: space-evenly;
+    background-color: rgb(250, 243, 243);
+    box-shadow: 5px 5px  5px grey;
+    border-radius: 35px;
+    cursor: pointer;
+    
+}
+.heading {
+    text-align: center;
+    margin-top: 30px;
+    color: #E53935;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.heading2 {
+margin-top: 50px;
+}
+ .cart{
+    display: flex ;
+    margin-top: 40px;
+ }
+
+ .layout,.layouts {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+ }
+
+.card {
+    margin-top: 13px;
+    width: 170px !important;
+    height: 310px;
+    
+}
+
+.card-title,.card-text {
+    margin: 3px;
+    
+}
+.card .btn-outline-warning {
+    width: 100% !important;
+}
+
+.card .btn:hover {
+    color: white !important;
+ }
+ .foot {
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    font-size: 14px;
+    display: flex;
+    background-color: #E53935;
+
+ }
+ .contact{
+    width: 100%;
+ }
+ .contact ul {
+    list-style: none;
+ }
+ 
+ .contact ul > li {
+    margin-top: 3px;
+    color: white;
+ }
+ .social-link {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+    margin-top: 15px;
+    color: white;
+ }
+.social-link ul {
+    list-style: none;
+}
+.social-link ul > li {
+    margin-top: 5px;
+}
+
+ @media only screen and (max-width: 1160px) {
+   .cart {
+    flex-direction: column;
+   }
+   .card {
+    width: 220px !important;
+    height: 320px !important;
+   }
+   
+ } 
+
+ @media only screen and (max-width: 700px) {
+    .layout,.layouts { 
+        display: block;
+        flex-direction: row !important;
+    }
+    .card {
+        width: 45% !important;
+        margin: 0% auto;
+        margin-top: 20px;
+        height: 310px !important;
+    }
+    .cart1,.cart2,.cart3 {
+        width: 80%;
+    }
+    .pic {
+        position: relative;
+        justify-self:flex-end;
+    }
+ }
+ @media only screen and (max-width: 400px)
+  {
+    .card{
+      width: 70% !important;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .social-link{
+        margin-right: 20px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .foot{
+        flex-direction: column;
+        height: 150px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .social-link {
+        margin-top: -5px;
+        padding-right: 40px !important;
+    }
+  }
